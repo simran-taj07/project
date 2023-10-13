@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10th</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+.div {
+    display: flex;
+    padding-right: px;
+    padding-left: 0px;
+    flex-direction: column;
+  }
+  .div-2 {
+    color: #fff;
+    text-align: center;
+    font-family: FontAwesome, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    align-self: end;
+    margin-top: 100px;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      text-wrap: initial;
+    }
+  }
+        .div {
+          background-color: var(--background-dark, #2f1893);
+          display: flex;
+          padding-right: 20px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-2 {
+          align-self: center;
+          display: flex;
+          margin-top: 33px;
+          margin-left: -19px;
+          width: 100%;
+          max-width: 968px;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-2 {
+            max-width: 100%;
+            flex-wrap: wrap;
+          }
+        }
+        .div-3 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 410px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-3 {
+            justify-content: center;
+          }
+        }
+        .div-4 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: -0.293px;
+          align-self: stretch;
+          width: 114px;
+        }
+        .div-5 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-6 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          align-self: start;
+        }
+        .div-7 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          align-self: start;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-7 {
+            text-wrap: initial;
+          }
+        }
+        .div-8 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 242px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-8 {
+            justify-content: center;
+          }
+        }
+        .div-9 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-10 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-11 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-direction: column;
+        }
+        .div-12 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          align-self: stretch;
+          text-wrap: nowrap;
+          border-radius: 100px;
+          border: 2px solid var(--colors-white, #fff);
+          width: 94px;
+          max-width: 100%;
+          flex-grow: 1;
+          padding-top: 12px;
+          padding-right: 19px;
+          padding-bottom: 11px;
+          padding-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-12 {
+            text-wrap: initial;
+          }
+        }
+        .div-13 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 58px;
+          font-weight: 700;
+          line-height: 70px;
+          letter-spacing: -1px;
+          align-self: center;
+          margin-top: 87px;
+          width: 872px;
+          max-width: 100%;
+        }
+        @media (max-width: 991px) {
+          .div-13 {
+            font-size: 40px;
+          }
+        }
+        .div-14 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 32px;
+          align-self: center;
+          margin-top: 20px;
+          width: 665px;
+          max-width: 100%;
+        }
+        .div-15 {
+          align-self: center;
+          display: flex;
+          margin-top: 81px;
+          width: 280px;
+          max-width: 100%;
+          flex-direction: column;
+        }
+        .div-16 {
+          border-radius: 100px;
+          background-color: var(--action-primary, #25dac5);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 28px;
+          padding-right: 20px;
+          padding-bottom: 28px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-17 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-17 {
+            text-wrap: initial;
+          }
+        }
+        .div-18 {
+          align-self: center;
+          margin-top: 98px;
+          margin-left: -5px;
+          margin-bottom: 81px;
+          width: 760px;
+          max-width: 100%;
+        }
+        .div-19 {
+          gap: 20px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .div-19 {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 48%;
+          margin-left: 0px;
+        }
+        @media (max-width: 991px) {
+          .column {
+            width: 100%;
+          }
+        }
+        .div-20 {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-20 {
+            margin-top: 50px;
+          }
+        }
+        .img {
+          aspect-ratio: 1.55;
+          object-fit: cover;
+          object-position: center;
+          width: 170px;
+          border-radius: 10px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-21 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 170px;
+        }
+        .column-2 {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 52%;
+          margin-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .column-2 {
+            width: 100%;
+          }
+        }
+        .div-22 {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-22 {
+            margin-top: 50px;
+          }
+        }
+        .img-2 {
+          aspect-ratio: 1.55;
+          object-fit: cover;
+          object-position: center;
+          width: 170px;
+          border-radius: 10px;
+          align-self: start;
+        }
+        .div-23 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          align-self: start;
+          width: 170px;
+        }
+      </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <div class="div-3">
+            <div class="div-4">Startup 3</div>
+            <div class="div-5">Products</div>
+            <div class="div-6">Pricing</div>
+            <div class="div-7">Community</div>
+          </div>
+          <div class="div-8">
+            <div class="div-9">Help</div>
+            <div class="div-10">Login</div>
+            <div class="div-11"><div class="div-12">Sign Up</div></div>
+          </div>
+        </div>
+        <div class="div-13">
+          A high-quality solution for those who want a beautiful startup website
+          quickly
+        </div>
+        <div class="div-14">
+          Startup contains components and complex blocks which can easily be
+          integrated into almost any design.
+        </div>
+        <div class="div-15">
+          <div class="div-16"><div class="div-17">Get Started for Free</div></div>
+        </div>
+        <div class="div-18">
+          <div class="div-19">
+            <div class="column">
+              <div class="div-20">
+                <img
+                  loading="lazy"
+                  src="../Mask (2).png"
+                  class="img"
+                />
+                <div class="div-21">
+                  A high-quality solution for a beautiful startup website.
+                </div>
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="div-22">
+                <img
+                  loading="lazy"
+                 src="../Mask (1).png"
+                  class="img-2"
+                />
+                <div class="div"><div class="div-2"></div></div>
+                <div class="div-23">
+                  Learn more about Startup Framework in demo version.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

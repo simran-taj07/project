@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .div {
+          background-color: var(--background-dark, #2f1893);
+          display: flex;
+          flex-direction: column;
+        }
+        .div-2 {
+          display: flex;
+          flex-direction: column;
+          align-self: stretch;
+          position: relative;
+          display: flex;
+          min-height: 800px;
+          width: 100%;
+          /* padding-top: 10px; */
+          /* padding-right: 20px; */
+          padding-bottom: 40px;
+          /* padding-left: 20px; */
+        }
+        @media (max-width: 991px) {
+          .div-2 {
+            max-width: 100%;
+          }
+        }
+        .img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        .div-3 {
+          position: relative;
+          align-self: center;
+          display: flex;
+          margin-top: 20px;
+          margin-left: -20px;
+          width: 100%;
+          max-width: 971px;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-3 {
+            max-width: 100%;
+            flex-wrap: wrap;
+          }
+        }
+        .div-4 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 537px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-4 {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+        .div-5 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: start;
+        }
+        .div-6 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: start;
+        }
+        .div-7 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: start;
+          width: 109px;
+        }
+        .div-8 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: -0.293px;
+          align-self: start;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-8 {
+            text-wrap: initial;
+          }
+        }
+        .div-9 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 177px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        .div-10 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-11 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-direction: column;
+        }
+        .div-12 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: stretch;
+          text-wrap: nowrap;
+          border-radius: 100px;
+          background-color: var(--action-primary, #25dac5);
+          width: 100px;
+          max-width: 100%;
+          flex-grow: 1;
+          padding-top: 12px;
+          padding-right: 19px;
+          padding-bottom: 10px;
+          padding-left: 19px;
+        }
+        @media (max-width: 991px) {
+          .div-12 {
+            text-wrap: initial;
+          }
+        }
+        .div-13 {
+          position: relative;
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 58px;
+          font-weight: 700;
+          line-height: 70px;
+          letter-spacing: -1px;
+          align-self: center;
+          margin-top: 73px;
+          max-width: 830px;
+        }
+        @media (max-width: 991px) {
+          .div-13 {
+            max-width: 100%;
+            font-size: 40px;
+          }
+        }
+        .div-14 {
+          position: relative;
+          align-self: center;
+          display: flex;
+          margin-top: 84px;
+          width: 70px;
+          max-width: 100%;
+          flex-direction: column;
+        }
+        .div-15 {
+          border-radius: 100px;
+          background-color: var(--socials-youtube, #ea3223);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 26px;
+          padding-right: 20px;
+          padding-bottom: 26px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-16 {
+          justify-content: center;
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: FontAwesome, sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          align-self: center;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-16 {
+            text-wrap: initial;
+          }
+        }
+        .div-17 {
+          position: relative;
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          align-self: center;
+          margin-top: 77px;
+          margin-bottom: 53px;
+          max-width: 513px;
+        }
+        @media (max-width: 991px) {
+          .div-17 {
+            max-width: 100%;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <img
+            loading="lazy"
+            srcset="C:\Users\LENOVO\Desktop\Image.png"
+            class="img"
+          />
+          <div class="div-3">
+            <div class="div-4">
+              <div class="div-5">Products</div>
+              <div class="div-6">Pricing</div>
+              <div class="div-7">Community</div>
+              <div class="div-8">Startup 3</div>
+            </div>
+            <div class="div-9">
+              <div class="div-10">Login</div>
+              <div class="div-11"><div class="div-12">Sign Up</div></div>
+            </div>
+          </div>
+          <div class="div-13">
+            A high-quality solution for those who want a beautiful startup website
+            quickly
+          </div>
+          <div class="div-14">
+            <div class="div-15"><div class="div-16"></div></div>
+          </div>
+          <div class="div-17">
+            We made it so beutiful and simple. It combines landings, pages, blogs and
+            shop screens. It is definitely the tool you need in your collection!
+          </div>
+        </div>
+      </div>
+</body>
+</html>

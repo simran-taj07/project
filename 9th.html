@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .div {
+          background-color: var(--background-light, #fff);
+          display: flex;
+          flex-direction: column;
+        }
+        .div-2 {
+          background-color: #fff;
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          padding-top: 40px;
+          padding-right: 20px;
+          padding-bottom: 40px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        @media (max-width: 991px) {
+          .div-2 {
+            max-width: 100%;
+          }
+          
+        }
+        .div-3 {
+          align-self: center;
+          display: flex;
+          margin-top: 38px;
+          margin-left: -19px;
+          width: 100%;
+          max-width: 968px;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-3 {
+            max-width: 100%;
+            flex-wrap: wrap;
+          }
+        }
+        .div-4 {
+          color: var(--colors-heading, #1e0e62);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: -0.293px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 114px;
+        }
+        .div-5 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 596px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-5 {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+        .div-6 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          opacity: 0.3;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-7 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-8 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-9 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-10 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-direction: column;
+        }
+        .div-11 {
+          color: var(--colors-heading, #1e0e62);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: stretch;
+          text-wrap: nowrap;
+          border-radius: 100px;
+          border: 2px solid var(--colors-grey, #ebeaed);
+          width: 118px;
+          max-width: 100%;
+          flex-grow: 1;
+          padding-top: 13px;
+          padding-right: 20px;
+          padding-bottom: 14px;
+          padding-left: 21px;
+        }
+        @media (max-width: 991px) {
+          .div-11 {
+            text-wrap: initial;
+          }
+        }
+        .div-12 {
+          align-self: center;
+          margin-top: 120px;
+          margin-left: -20px;
+          margin-bottom: 78px;
+          width: 100%;
+          max-width: 971px;
+        }
+        @media (max-width: 991px) {
+          .div-12 {
+            max-width: 100%;
+          }
+        }
+        .div-13 {
+          gap: 20px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .div-13 {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 58%;
+          margin-left: 0px;
+        }
+        @media (max-width: 991px) {
+          .column {
+            width: 100%;
+          }
+        }
+        .div-14 {
+          display: flex;
+          flex-grow: 1;
+          flex-direction: column;
+        }
+        @media (max-width: 991px) {
+          .div-14 {
+            max-width: 100%;
+            margin-top: 50px;
+          }
+        }
+        .div-15 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 58px;
+          font-weight: 700;
+          line-height: 70px;
+          letter-spacing: -1px;
+          align-self: start;
+          width: 471px;
+          max-width: 100%;
+        }
+        @media (max-width: 991px) {
+          .div-15 {
+            font-size: 40px;
+          }
+        }
+        .div-16 {
+          color: var(--colors-text, rgba(21, 20, 57, 0.4));
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          opacity: 0.7;
+          align-self: start;
+          margin-top: 31px;
+          width: 421px;
+          max-width: 100%;
+        }
+        .div-17 {
+          align-self: start;
+          display: flex;
+          margin-top: 58px;
+          width: 206px;
+          max-width: 100%;
+          flex-grow: 1;
+          flex-direction: column;
+        }
+        .div-18 {
+          border-radius: 100px;
+          background-color: var(--action-secondary, #482be7);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 21px;
+          padding-right: 20px;
+          padding-bottom: 21px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-19 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-bottom: -3px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-19 {
+            text-wrap: initial;
+          }
+        }
+        .column-2 {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 42%;
+          margin-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .column-2 {
+            width: 100%;
+          }
+        }
+        .img {
+          aspect-ratio: 1;
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          border-radius: 0px 0px 0px 0px;
+          margin-top: 4px;
+        }
+        @media (max-width: 991px) {
+          .img {
+            margin-top: 50px;
+          }
+        }
+
+        .sim{
+position: relative;
+
+left: 260px;
+top: 60px;
+        }
+      </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <div class="div-3">
+            <div class="div-4">Startup 3</div>
+            <div class="div-5">
+              <div class="div-6">Overview</div>
+              <div class="div-7">Features</div>
+              <div class="div-8">Company</div>
+              <div class="div-9">Platform</div>
+              <div class="div-10"><div class="div-11">Purchase</div></div>
+            </div>
+          </div>
+          <div class="div-12">
+            <div class="div-13">
+              <div class="column">
+                <div class="div-14">
+                  <div class="div-15">You have the design, you have the code</div>
+                  <div class="div-16">
+                    We made it so beutiful and simple. It combines landings, pages,
+                    blogs and shop screens. It is definitely the tool you need in your
+                    collection!
+                  </div>
+                  <div class="div-17">
+                    <div class="div-18"><div class="div-19">Explore Design</div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sim">
+<img src="C:\Users\LENOVO\Desktop\Oval 151.png" alt="">
+              </div>
+              <div class="column-2">
+                <img
+                  loading="lazy"
+                  srcset="C:\Users\LENOVO\Desktop\Rectangle.png"
+               
+                  class="img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

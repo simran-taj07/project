@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  .div {
+    background-color: var(--background-dark, #2f1893);
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+  .div-2 {
+    align-self: center;
+    display: flex;
+    margin-top: 53px;
+    margin-left: -25px;
+    width: 100%;
+    max-width: 1158px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .div-3 {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.293px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 119px;
+  }
+  .div-4 {
+    align-self: center;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 329px;
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      justify-content: center;
+    }
+  }
+  .div-5 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .div-6 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .div-7 {
+    align-self: center;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+  }
+  .div-8 {
+    color: var(--colors-white, #fff);
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    align-self: stretch;
+    text-wrap: nowrap;
+    border-radius: 100px;
+    background-color: var(--action-secondary, #482be7);
+    width: 100px;
+    max-width: 100%;
+    flex-grow: 1;
+    padding-top: 12px;
+    padding-right: 19px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+  }
+  @media (max-width: 991px) {
+    .div-8 {
+      text-wrap: initial;
+    }
+  }
+  .div-9 {
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 86px;
+    letter-spacing: -1px;
+    align-self: center;
+    margin-top: 94px;
+    width: 770px;
+    max-width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-9 {
+      font-size: 40px;
+    }
+  }
+  .div-10 {
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    align-self: center;
+    margin-top: 39px;
+    width: 607px;
+    max-width: 100%;
+  }
+  .div-11 {
+    align-self: center;
+    display: flex;
+    margin-top: 78px;
+    width: 480px;
+    max-width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  @media (max-width: 991px) {
+    .div-11 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-12 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  .div-13 {
+    border-radius: 100px;
+    border: 2px solid var(--colors-white, #fff);
+    align-self: stretch;
+    display: flex;
+    width: 350px;
+    max-width: 100%;
+    flex-grow: 1;
+    padding-top: 23px;
+    padding-right: 20px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+  .div-14 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 0.4;
+    align-self: start;
+    margin-left: 4px;
+    margin-bottom: -1px;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-14 {
+      text-wrap: initial;
+    }
+  }
+  .div-15 {
+    border-radius: 30px;
+    background-color: var(--action-primary, #25dac5);
+    align-self: stretch;
+    display: flex;
+    width: 120px;
+    max-width: 100%;
+    padding-top: 23px;
+    padding-right: 20px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+  .div-16 {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    align-self: center;
+    margin-top: -1px;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-16 {
+      text-wrap: initial;
+    }
+  }
+  .div-17 {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    opacity: 0.3;
+    align-self: center;
+    margin-top: 31px;
+    margin-bottom: 95px;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-17 {
+      text-wrap: initial;
+    }
+  }
+</style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <div class="div-3">Startup 3</div>
+          <div class="div-4">
+            <div class="div-5">Subscribe</div>
+            <div class="div-6">Features</div>
+            <div class="div-7"><div class="div-8">Sign Up</div></div>
+          </div>
+        </div>
+        <div class="div-9">
+          Let’s make design
+          <br />
+          fast and easy
+        </div>
+        <div class="div-10">
+          The most important part of the Startup is the samples. The samples form a
+          set of 25 usable pages you can use as is or you can add new blocks from UI
+          Kit.
+        </div>
+        <div class="div-11">
+          <div class="div-12">
+            <div class="div-13"><div class="div-14">Your email</div></div>
+          </div>
+          <div class="div-15"><div class="div-16">Send</div></div>
+        </div>
+        <div class="div-17">By signing up, you agree to the Terms of Service</div>
+      </div>
+      
+</body>
+</html>

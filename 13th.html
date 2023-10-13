@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13th</title>
+   
+    <style>
+        .div {
+          background-color: var(--background-dark, #2f1893);
+          display: flex;
+          padding-right: 20px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-2 {
+          align-self: center;
+          display: flex;
+          margin-top: 65px;
+          margin-left: -19px;
+          width: 100%;
+          max-width: 969px;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-2 {
+            max-width: 100%;
+            flex-wrap: wrap;
+          }
+        }
+        .div-3 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: -0.293px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 114px;
+        }
+        .div-4 {
+          align-self: stretch;
+          display: flex;
+          width: 503px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-4 {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+        .div-5 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          opacity: 0.3;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-6 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-7 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-8 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-9 {
+          align-self: stretch;
+          display: flex;
+          flex-direction: column;
+          width: 120px;
+        }
+        .div-10 {
+          border-radius: 100px;
+          background-color: var(--action-third, #e93a7d);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 14px;
+          padding-right: 20px;
+          padding-bottom: 14px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-11 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: -1px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-11 {
+            text-wrap: initial;
+          }
+        }
+        .div-12 {
+          align-self: center;
+          margin-top: 82px;
+          margin-left: -23px;
+          margin-bottom: 82px;
+          width: 100%;
+          max-width: 976px;
+        }
+        @media (max-width: 991px) {
+          .div-12 {
+            max-width: 100%;
+          }
+        }
+        .div-13 {
+          gap: 20px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .div-13 {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 46%;
+          margin-left: 0px;
+        }
+        @media (max-width: 991px) {
+          .column {
+            width: 100%;
+          }
+        }
+        .div-14 {
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-direction: column;
+        }
+        @media (max-width: 991px) {
+          .div-14 {
+            margin-top: 50px;
+          }
+        }
+        .div-15 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 58px;
+          font-weight: 700;
+          line-height: 70px;
+          letter-spacing: -1px;
+          align-self: start;
+        }
+        @media (max-width: 991px) {
+          .div-15 {
+            font-size: 40px;
+          }
+        }
+        .div-16 {
+          color: var(--colors-white, #fff);
+          font-family: DM Sans, sans-serif;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 32px;
+          align-self: start;
+          margin-top: 26px;
+          width: 363px;
+          max-width: 100%;
+        }
+        .div-17 {
+          align-self: start;
+          display: flex;
+          margin-top: 55px;
+          width: 157px;
+          max-width: 100%;
+          flex-grow: 1;
+          flex-direction: column;
+        }
+        .div-18 {
+          border-radius: 100px;
+          background-color: var(--action-third, #e93a7d);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 19px;
+          padding-right: 20px;
+          padding-bottom: 19px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-19 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: -1px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-19 {
+            text-wrap: initial;
+          }
+        }
+        .column-2 {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 54%;
+          margin-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .column-2 {
+            width: 100%;
+          }
+        }
+        .div-20 {
+          border-radius: 10px;
+          background-color: var(--background-light, #fff);
+          display: flex;
+          margin-left: auto;
+          margin-right: auto;
+          flex-grow: 1;
+          padding-top: 40px;
+          padding-right: 20px;
+          padding-bottom: 40px;
+          padding-left: 20px;
+          flex-direction: column;
+          width: 100%;
+        }
+        @media (max-width: 991px) {
+          .div-20 {
+            max-width: 100%;
+            margin-top: 50px;
+          }
+        }
+        .div-21 {
+          align-self: center;
+          display: flex;
+          margin-top: 20px;
+          margin-bottom: 9px;
+          width: 332px;
+          max-width: 100%;
+          flex-direction: column;
+        }
+        .div-22 {
+          color: var(--colors-heading, #1e0e62);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 42px;
+          font-weight: 700;
+          line-height: 52px;
+          letter-spacing: -0.4px;
+          align-self: center;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-22 {
+            text-wrap: initial;
+          }
+        }
+        .div-23 {
+          align-self: stretch;
+          display: flex;
+          margin-top: 34px;
+          margin-left: 2px;
+          flex-direction: column;
+          width: 100%;
+        }
+        .div-24 {
+          color: var(--colors-text, rgba(21, 20, 57, 0.4));
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: stretch;
+          text-wrap: nowrap;
+          border-radius: 100px;
+          border: 2px solid var(--colors-grey, #ebeaed);
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 18px;
+          padding-right: 20px;
+          padding-bottom: 19px;
+          padding-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-24 {
+            text-wrap: initial;
+          }
+        }
+        .div-25 {
+          align-self: stretch;
+          display: flex;
+          margin-top: 20px;
+          margin-left: 2px;
+          flex-direction: column;
+          width: 100%;
+        }
+        .div-26 {
+          color: var(--colors-text, rgba(21, 20, 57, 0.4));
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: stretch;
+          text-wrap: nowrap;
+          border-radius: 100px;
+          border: 2px solid var(--colors-grey, #ebeaed);
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 17px;
+          padding-right: 20px;
+          padding-bottom: 15px;
+          padding-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-26 {
+            text-wrap: initial;
+          }
+        }
+        .div-27 {
+          align-self: start;
+          display: flex;
+          margin-top: 30px;
+          margin-left: 2px;
+          width: 263px;
+          max-width: 100%;
+          align-items: flex-start;
+          gap: 13px;
+        }
+        .img {
+          aspect-ratio: 1;
+          object-fit: cover;
+          object-position: center;
+          width: 24px;
+        }
+        .div-28 {
+          color: var(--colors-text, rgba(21, 20, 57, 0.4));
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-28 {
+            text-wrap: initial;
+          }
+        }
+        .div-29 {
+          align-self: stretch;
+          display: flex;
+          margin-top: 30px;
+          margin-left: 2px;
+          flex-direction: column;
+          width: 100%;
+        }
+        .div-30 {
+          border-radius: 100px;
+          background-color: var(--action-secondary, #482be7);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 17px;
+          padding-right: 20px;
+          padding-bottom: 17px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-31 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-bottom: -2px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-31 {
+            text-wrap: initial;
+          }
+        }
+        .div-32 {
+          align-self: stretch;
+          display: flex;
+          margin-top: 26px;
+          margin-right: 1px;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 13px;
+        }
+        @media (max-width: 991px) {
+          .div-32 {
+            justify-content: center;
+          }
+        }
+        .img-2 {
+          aspect-ratio: 72;
+          object-fit: cover;
+          object-position: center;
+          width: 144px;
+          background-blend-mode: normal;
+          border: 2px solid
+            rgba(234.57275211811066, 234.09336984157562, 237.20081269741058, 1);
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-33 {
+          color: var(--colors-text, rgba(21, 20, 57, 0.4));
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          opacity: 0.9;
+          align-self: stretch;
+        }
+        .img-3 {
+          aspect-ratio: 72;
+          object-fit: cover;
+          object-position: center;
+          width: 144px;
+          background-blend-mode: normal;
+          border: 2px solid
+            rgba(234.57275211811066, 234.09336984157562, 237.20081269741058, 1);
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-34 {
+          align-self: stretch;
+          display: flex;
+          margin-top: 26px;
+          margin-left: 2px;
+          flex-direction: column;
+          width: 100%;
+        }
+        .div-35 {
+          border-radius: 100px;
+          background-color: var(--socials-twitter, #1da1f2);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          flex-grow: 1;
+          padding-top: 17px;
+          padding-right: 20px;
+          padding-bottom: 17px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-36 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-bottom: -2px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-36 {
+            text-wrap: initial;
+          }
+        }
+        .div-37 {
+          align-self: center;
+          display: flex;
+          margin-top: 25px;
+          margin-left: 6px;
+          width: 278px;
+          max-width: 100%;
+          align-items: flex-start;
+          gap: 11px;
+        }
+        .div-38 {
+          color: var(--colors-text, rgba(21, 20, 57, 0.4));
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          align-self: stretch;
+          width: 231px;
+        }
+        .div-39 {
+          color: var(--action-primary, #25dac5);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          align-self: stretch;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-39 {
+            text-wrap: initial;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <div class="div-3">Startup 3</div>
+          <div class="div-4">
+            <div class="div-5">Overview</div>
+            <div class="div-6">Prices</div>
+            <div class="div-7">Blog</div>
+            <div class="div-8">Feedback</div>
+            <div class="div-9">
+              <div class="div-10"><div class="div-11">Purchase</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="div-12">
+          <div class="div-13">
+            <div class="column">
+              <div class="div-14">
+                <div class="div-15">Generate Awesome Web Pages</div>
+                <div class="div-16">
+                  The most important part of the Startup is the samples. The samples
+                  form a set of 25 usable pages you can use as is or you can add new
+                  blocks.
+                </div>
+                <div class="div-17">
+                  <div class="div-18"><div class="div-19">Learn More</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="div-20">
+                <div class="div-21">
+                  <div class="div-22">Sign Up Now</div>
+                  <div class="div-23"><div class="div-24">Your email</div></div>
+                  <div class="div-25"><div class="div-26">Your password</div></div>
+                  <div class="div-27">
+                    <img
+                      loading="lazy"
+                      src="../On.png"
+                      class="img"
+                    />
+                    <div class="div-28">I agree to the Terms of Service.</div>
+                  </div>
+                  <div class="div-29">
+                    <div class="div-30"><div class="div-31">Sign In</div></div>
+                  </div>
+                  <div class="div-32">
+                    <img
+                      loading="lazy"
+                      srcset="..."
+                      class="img-2"
+                    />
+                    <div class="div-33">or</div>
+                    <img
+                      loading="lazy"
+                      srcset="..."
+                      class="img-3"
+                    />
+                  </div>
+                  <div class="div-34">
+                    <div class="div-35">
+                      <div class="div-36">Login via Twitter</div>
+                    </div>
+                  </div>
+                  <div class="div-37">
+                    <div class="div-38">Do you have an Account?</div>
+                    <div class="div-39">Sign In</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

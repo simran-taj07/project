@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11th</title>
+    <style>
+        .div {
+          background-color: var(--background-light, #fff);
+          display: flex;
+          padding-right: 20px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-2 {
+          align-self: center;
+          display: flex;
+          margin-top: 66px;
+          margin-left: -18px;
+          width: 100%;
+          max-width: 967px;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-2 {
+            max-width: 100%;
+            flex-wrap: wrap;
+          }
+        }
+        .div-3 {
+          color: var(--colors-heading, #1e0e62);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: -0.293px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 114px;
+        }
+        .div-4 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          width: 384px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-4 {
+            justify-content: center;
+          }
+        }
+        .div-5 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          opacity: 0.3;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-6 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-7 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .div-8 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-direction: column;
+        }
+        .div-9 {
+          border-radius: 100px;
+          background-color: var(--action-secondary, #482be7);
+          align-self: stretch;
+          display: flex;
+          width: 80px;
+          max-width: 100%;
+          flex-grow: 1;
+          padding-top: 12px;
+          padding-right: 20px;
+          padding-bottom: 12px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-10 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-bottom: -2px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-10 {
+            text-wrap: initial;
+          }
+        }
+        .div-11 {
+          align-self: center;
+          margin-top: 67px;
+          margin-left: -20px;
+          margin-bottom: 114px;
+          width: 100%;
+          max-width: 970px;
+        }
+        @media (max-width: 991px) {
+          .div-11 {
+            max-width: 100%;
+          }
+        }
+        .div-12 {
+          gap: 20px;
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .div-12 {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 46%;
+          margin-left: 0px;
+        }
+        @media (max-width: 991px) {
+          .column {
+            width: 100%;
+          }
+        }
+        .div-13 {
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-direction: column;
+        }
+        @media (max-width: 991px) {
+          .div-13 {
+            margin-top: 50px;
+          }
+        }
+        .div-14 {
+          color: var(--colors-heading, #1e0e62);
+          font-family: DM Sans, sans-serif;
+          font-size: 58px;
+          font-weight: 700;
+          line-height: 70px;
+          letter-spacing: -1px;
+          align-self: start;
+          width: 400px;
+          max-width: 100%;
+        }
+        @media (max-width: 991px) {
+          .div-14 {
+            font-size: 40px;
+          }
+        }
+        .div-15 {
+          color: var(--colors-text, rgba(21, 20, 57, 0.4));
+          font-family: DM Sans, sans-serif;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 32px;
+          opacity: 0.7;
+          align-self: start;
+          margin-top: 20px;
+          width: 370px;
+          max-width: 100%;
+        }
+        .div-16 {
+          align-self: start;
+          display: flex;
+          margin-top: 65px;
+          width: 283px;
+          max-width: 100%;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        .div-17 {
+          align-self: center;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-direction: column;
+        }
+        .div-18 {
+          border-radius: 100px;
+          background-color: var(--action-primary, #25dac5);
+          align-self: stretch;
+          display: flex;
+          width: 153px;
+          max-width: 100%;
+          flex-grow: 1;
+          padding-top: 19px;
+          padding-right: 20px;
+          padding-bottom: 19px;
+          padding-left: 20px;
+          flex-direction: column;
+        }
+        .div-19 {
+          color: var(--colors-white, #fff);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: -1px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-19 {
+            text-wrap: initial;
+          }
+        }
+        .div-20 {
+          color: var(--colors-heading, #1e0e62);
+          text-align: center;
+          font-family: DM Sans, sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          align-self: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-20 {
+            text-wrap: initial;
+          }
+        }
+        .column-2 {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 54%;
+          margin-left: 20px;
+        }
+        @media (max-width: 991px) {
+          .column-2 {
+            width: 150%;
+          }
+        }
+        .div-21 {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          display: flex;
+          width: 700px;
+          min-height: 700px;
+          margin-top: auto;
+          margin-bottom: auto;
+          flex-grow: 1;
+          padding-top: 30px;
+          padding-right: 22px;
+          padding-bottom: 30px;
+          padding-left: 22px;
+          /* z-index: 2; */
+        }
+        @media (max-width: 991px) {
+          .div-21 {
+            max-width: 100%;
+            margin-top: 50px;
+          }
+        }
+        .img {
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          object-fit: cover;
+          object-position: center;
+        }
+        .img-2 {
+          aspect-ratio: 0.75;
+          object-fit: cover;
+          object-position: center;
+          width: 431px;
+          border-radius: 11px;
+          align-self: stretch;
+          margin-bottom: -1px;
+          max-width: 100%;
+        }
+
+      #phoneimg{
+        height: 869px;
+    width: 658px;
+    padding: 20px;
+  
+      }
+       #sim{
+          position: relative;
+          margin-top: -580px;
+          top: 10px;
+          padding-bottom: 90px;
+          height: 90px;
+        
+        
+        
+        }
+      </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <div class="div-3">Startup 3</div>
+          <div class="div-4">
+            <div class="div-5">About</div>
+            <div class="div-6">Features</div>
+            <div class="div-7">Contacts</div>
+            <div class="div-8">
+              <div class="div-9"><div class="div-10">Buy</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="div-11">
+          <div class="div-12">
+            <div class="column">
+              <div class="div-13">
+                <div class="div-14">Great things begin in a small way</div>
+                <div class="div-15">
+                  We haven’t forgotten about responsive layout. With Startup
+                  Framework, you can create a website with full mobile support.
+                </div>
+                <div class="div-16">
+                  <div class="div-17">
+                    <div class="div-18"><div class="div-19">Get Started</div></div>
+                  </div>
+                  <div class="div-20">Learn More</div>
+                </div>
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="div-21">
+            
+  
+                <img
+                  loading="lazy"
+                  src="../iPad Pro.png"
+                  style="position: relative;"
+                 
+                />
+
+                  <img src="../Screen.png" style="position : absolute;" alt="" width="400px"id="phoneimg" height="5x00px">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

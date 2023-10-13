@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21th</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  .div {
+    background-color: var(--background-dark, #2f1893);
+    display: flex;
+    flex-direction: column;
+  }
+  .div-2 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    position: relative;
+    display: flex;
+    min-height: 810px;
+    width: 100%;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+    }
+  }
+  .img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .div-3 {
+    position: relative;
+    align-self: center;
+    display: flex;
+    margin-top: 9px;
+    margin-left: -19px;
+    width: 100%;
+    max-width: 968px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .div-4 {
+    color: var(--colors-white, #fff);
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.293px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 114px;
+  }
+  .div-5 {
+    align-self: center;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 310px;
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-5 {
+      justify-content: center;
+    }
+  }
+  .div-6 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    align-self: start;
+  }
+  .div-7 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    align-self: start;
+  }
+  .div-8 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    align-self: start;
+  }
+  .div-9 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    align-self: start;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-9 {
+      text-wrap: initial;
+    }
+  }
+  .div-10 {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .div-11 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+  }
+  .div-12 {
+    color: var(--colors-white, #fff);
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    align-self: stretch;
+    text-wrap: nowrap;
+    border-radius: 100px;
+    border: 2px solid var(--colors-white, #fff);
+    width: 100%;
+    flex-grow: 1;
+    padding-top: 12px;
+    padding-right: 21px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+  }
+  @media (max-width: 991px) {
+    .div-12 {
+      text-wrap: initial;
+    }
+  }
+  .div-13 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+  }
+  .div-14 {
+    color: var(--colors-white, #fff);
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    align-self: stretch;
+    text-wrap: nowrap;
+    border-radius: 100px;
+    background-color: var(--action-secondary, #482be7);
+    width: 100%;
+    flex-grow: 1;
+    padding-top: 12px;
+    padding-right: 17px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+  }
+  @media (max-width: 991px) {
+    .div-14 {
+      text-wrap: initial;
+    }
+  }
+  .div-15 {
+    position: relative;
+    color: var(--colors-white, #fff);
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+    align-self: center;
+    margin-top: 78px;
+    margin-left: 7px;
+    width: 608px;
+    max-width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-15 {
+      font-size: 40px;
+    }
+  }
+  .div-16 {
+    position: relative;
+    align-self: center;
+    display: flex;
+    margin-top: 99px;
+    width: 70px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .div-17 {
+    border-radius: 100px;
+    background-color: var(--socials-youtube, #ea3223);
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    padding-top: 26px;
+    padding-right: 20px;
+    padding-bottom: 26px;
+    padding-left: 20px;
+    flex-direction: column;
+  }
+  .div-18 {
+    justify-content: center;
+    color: var(--colors-white, #fff);
+    text-align: center;
+    font-family: FontAwesome, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    align-self: center;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-18 {
+      text-wrap: initial;
+    }
+  }
+  .div-19 {
+    position: relative;
+    align-self: center;
+    display: flex;
+    margin-top: 116px;
+    margin-left: -6px;
+    margin-bottom: 66px;
+    width: 660px;
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-19 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-20 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  .div-21 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    align-self: start;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-21 {
+      text-wrap: initial;
+    }
+  }
+  .div-22 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.7;
+    align-self: start;
+    margin-top: 16px;
+    width: 350px;
+    max-width: 100%;
+  }
+  .div-23 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  .div-24 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    align-self: start;
+    text-wrap: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-24 {
+      text-wrap: initial;
+    }
+  }
+  .div-25 {
+    color: var(--colors-white, #fff);
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.7;
+    align-self: start;
+    margin-top: 15px;
+    width: 300px;
+    max-width: 100%;
+  }
+</style>
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <img
+            loading="lazy"
+            src="../Image (6).png"
+            class="img"
+          />
+          <div class="div-3">
+            <div class="div-4">Startup 3</div>
+            <div class="div-5">
+              <div class="div-6">Get App</div>
+              <div class="div-7">Features</div>
+              <div class="div-8">About</div>
+              <div class="div-9">F.A.Q.</div>
+            </div>
+            <div class="div-10">
+              <div class="div-11"><div class="div-12">Sign In</div></div>
+              <div class="div-13"><div class="div-14">Sign Up</div></div>
+            </div>
+          </div>
+          <div class="div-15">Startup 3. Suit Up Your Startup</div>
+          <div class="div-16">
+            <div class="div-17"><div class="div-18"></div></div>
+          </div>
+          <div class="div-19">
+            <div class="div-20">
+              <div class="div-21">Drag and Drop Generator</div>
+              <div class="div-22">
+                Build your site quickly with an intuitive and easy-to-use drag and
+                drop interface.
+              </div>
+            </div>
+            <div class="div-23">
+              <div class="div-24">Share & Export to HTML</div>
+              <div class="div-25">
+                Save time and energy by showing a developer about how things.
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
